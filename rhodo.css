@@ -50,13 +50,16 @@ header.compose-header {
     border-top: none;
 }*/
 /* Set app header color */
-.app-header
-{
-    background-color: #502020;
-}
+.app-header {background-color: #502020;}
 .btn {
 	background-color: #603030;
+    border-radius: 2px;
+    border: none;
+    color: white;
 }
+.btn:hover {background-color: #502020;}
+.inline-reply .icon {color:white;}
+.inline-reply {background-color: transparent;}
 /* Sets color of buttons and stuffs. */
 .attach-compose-buttons .tweet-button {background-color:#603030;}
 .btn-compose, .column-nav-link
@@ -73,10 +76,16 @@ header.compose-header {
 {
     border: none;
 }
+/* Send button disabled stuff */
+.js-send-button.is-disabled, .js-send-button.is-disabled:hover, .btn:disabled, .btn:disabled:hover {
+    background-color:#301010;
+    color:#cccccc;
+}
+/* Compose section background */
 .compose, .bg-r-light-gray
 {
-    background: linear-gradient( to right, #404040, #404040);
-    color: #55acee;
+    background-color: #404040;
+    color: #502020;
 }
 .compose-remember-state, .character-count-compose:disabled, .txt-r-text-link
 {
@@ -131,14 +140,6 @@ header.compose-header {
     border-radius: 6px;
     background-color: white;
     box-shadow: none;
-}
-.inline-reply
-{
-    background-color: transparent;
-}
-.inline-reply .icon
-{
-    color: #55acee;
 }
 .med-fullpanel
 {
@@ -441,7 +442,7 @@ input, textarea, select, .uneditable-input
 
 /* Fixed spinner gif */
 .spinner-button-icon-spinner {
-    background-image: url('https://i.imgur.com/8HC6epP.gif')
+    background-image: url('https://i.imgur.com/SZ3pUb2.gif')
 }
 /* Should fix random horizontal scrollbar on users modal when selecting a tweet */
 #open-modal .js-modal-panel .mdl-inner .mdl-content .mdl-column.mdl-column-rhs .js-right-column {
