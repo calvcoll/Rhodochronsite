@@ -11,11 +11,13 @@
 .application, .app-content, .app-columns-container {
     background-color: #603030;
 }
-
+/* Scrollbar non-round */
+.scroll-styled-v::-webkit-scrollbar-thumb, .scroll-styled-h::-webkit-scrollbar-thumb {
+    border-radius: 1px;
+}
 /* Column detailing */
 .column {
-    background: #404040;/*
-    border: none;*/
+    background: #404040;
     margin-right:2px;
 }
 /* Column header colouring stuff */
@@ -74,7 +76,7 @@ header.compose-header {
     border: none;
 }
 /* Send button disabled stuff */
-.js-send-button.is-disabled, .js-send-button.is-disabled:hover, .btn:disabled, .btn:disabled:hover {
+.js-send-button.is-disabled, .js-send-button.is-disabled:hover, .btn:disabled, .btn:disabled:hover, .btn.is-disabled, .btn.is-disabled:hover {
     background-color:#301010;
     color:#cccccc;
 }
@@ -89,14 +91,17 @@ header.compose-header {
 .is-selected.compose-account, .compose-account-selected {
     box-shadow: none;
 }
+/* Drawer stuffs */
 .drawer-header {
     border-bottom: none;
     z-index: 2;
     background: #404040;
 }
+.drawer-header-title { color: #cccccc; }
 .drawer-header:after {
     height: 0px;
 }
+/* Drawer stuffs end */
 .txt-r-dark-gray {
     color: #55acee;
 }
@@ -125,6 +130,9 @@ header.compose-header {
     background-color: transparent;
     box-shadow: none;
 }
+.app-search-tweet-results .chirp-container { margin-top: 50px; }
+h1.column-title { color:white; }
+.search-input { color: #cccccc; }
 /* Search icon when clicked/hovered */
 .app-search-fake:active, .app-search-fake:hover { color:white }
 .list-item.is-selected, .list-item.is-selected > div > .icon-search { color:white; }
@@ -173,7 +181,7 @@ header.compose-header {
 }
 .mdl-dismiss-media:hover, .is-inverted-light .mdl-dismiss-media:hover, .mdl-dismiss-media:focus, .is-inverted-light .mdl-dismiss-media:focus
 {
-    color: grey;
+    color: gray;
 }
 .lst-group .selected, .lst-group .selected:hover
 {
@@ -181,10 +189,7 @@ header.compose-header {
     border-radius: 6px;
 }
 .lst-group .selected .fullname { color:white } .lst-group .selected .username { color:white }
-.is-inverted-light, .is-inverted-light .account-link
-{
-    color: #292F33;
-}
+.account-link .fullname { color: #cccccc; }
 .tweet-stats
 {
     border-top: none;
@@ -236,7 +241,7 @@ a
 }
 a:hover, a:focus, a:active
 {
-    color: grey;
+    color: gray;
     text-decoration: none;
 }
 .is-selected .reply-triangle
@@ -247,10 +252,6 @@ input, textarea, select, .uneditable-input
 {
     border: none;
 }*/
-.btn-neutral-negative
-{
-    color: #dd2e44;
-}
 .prf-stats li + li a
 {
     border-left: none;
@@ -262,11 +263,6 @@ input, textarea, select, .uneditable-input
 .is-options-open .column-settings-link
 {
     border-color: transparent;
-}
-.app-search-tweet-results .column-header-temp
-{
-    background: linear-gradient( to bottom, #fff, rgba(255,255,255,0.9));
-    height: 50px;
 }
 .avatar, .prf-img
 {
@@ -283,7 +279,7 @@ input, textarea, select, .uneditable-input
 }
 .is-inverted-light .tweet-action:hover, .is-inverted-light .tweet-detail-action:hover, .is-inverted-light .tweet-action:focus, .is-inverted-light .tweet-detail-action:focus
 {
-    color: grey;
+    color: gray;
 }
 .column-content
 {
@@ -319,7 +315,7 @@ input, textarea, select, .uneditable-input
     background-image: url('https://i.imgur.com/fuHRSHI.png');
 }
 .lst-group .selected .fullname { color:white } .lst-group .selected .username { color:white }
-.column-nav-flyout .column-nav-item {background-color:#404040} .column-nav-flyout .column-nav-item span {color:white}
+.column-nav-flyout .column-nav-item {background-color:#502020} .column-nav-flyout .column-nav-item span {color:white}
 .btn span, .mdl-header-title, .mdl-inner .column-head-title {color:white}
 .compose-reply-tweet .fullname {color:#55acee}
 .compose-reply-tweet .icon-close:before {color:white}
@@ -327,7 +323,8 @@ input, textarea, select, .uneditable-input
 .is-retweet .tweet-text a {color:#71b332}
 .is-favorite .account-inline .fullname {color:#ffe100}
 .is-retweet.is-favorite .account-inline .fullname{color:#55acee} .is-retweet .account-inline .fullname {color:#71b332}
-#actions-modal .item-box .tweet-text {color:grey}
+#actions-modal .item-box .tweet-text {color:gray}
+.popover .tweet-text { color: #cccccc; }
 .list-account {text-shadow: none}
 #open-modal li:hover:not(.selected) .fullname {color:black}
 #open-modal li .list-account {border-radius:6px}
