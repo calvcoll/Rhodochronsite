@@ -3,50 +3,44 @@
 #353535 column grey header
 #404040 column grey
 #502020 sidebar red
+#55acee button blue
 #999 text grey - tweet
 */
 
 /* App background */
-.application, .app-content, .app-columns-container
-{
+.application, .app-content, .app-columns-container {
     background-color: #603030;
 }
 
 /* Column detailing */
-.column
-{
+.column {
     background: #404040;/*
     border: none;*/
     margin-right:2px;
 }
 /* Column header colouring stuff */
-.column-header, .column-header-temp
-{
+.column-header, .column-header-temp {
     background: #353535;
     border-bottom-color: transparent;
 }
 /* Sets stuff on side to transparent background */
-.scroll-conversation, .column-nav-item, .app-navigator, .app-title, .compose-reply-tweet, .compose-account, .facet-type.is-expanded, .column-options .button-tray, .compose .antiscroll-scrollbar, .account-row-separator-b:after
-{
+.scroll-conversation, .column-nav-item, .app-navigator, .app-title, .compose-reply-tweet, .compose-account, .facet-type.is-expanded, .column-options .button-tray, .compose .antiscroll-scrollbar, .account-row-separator-b:after {
     background-color: transparent;
 }
 /* Removes border of composer stuff */
-.stream-item, .compose-header, .facet-type, .with-column-divider-bottom
-{
+.stream-item, .compose-header, .facet-type, .with-column-divider-bottom {
     border-bottom: 1px solid #603030;
 }
 header.compose-header {
     color:#999;
 }
 /* Makes tweets look the same */
-.tweet-detail-wrapper
-{
+.tweet-detail-wrapper {
     background: transparent;
     border-color: transparent;
 }
 /* No idea? *//*
-.detail-view-inline
-{
+.detail-view-inline {
     border-top: none;
 }*/
 /* Set app header color */
@@ -61,19 +55,22 @@ header.compose-header {
 .inline-reply .icon {color:white;}
 .inline-reply {background-color: transparent;}
 /* Sets color of buttons and stuffs. */
-.attach-compose-buttons .tweet-button {background-color:#603030;}
-.btn-compose, .column-nav-link
-{
+.attach-compose-buttons .tweet-button {
+    background-color:#603030;
+    color:#cccccc;
+}
+.btn-compose, .column-nav-link {
     background-color: transparent;
-    color: #555555;
+    color: #cccccc;
     border: none;
 }
-.with-nav-border-t:before, .facet-type-thumb-size, .accordion-divider-t
-{
+.column-nav-link:hover, .app-nav-link:hover {
+    color: white;
+}
+.with-nav-border-t:before, .facet-type-thumb-size, .accordion-divider-t {
     border-top: none;
 }
-.numbered-badge-onnav
-{
+.numbered-badge-onnav {
     border: none;
 }
 /* Send button disabled stuff */
@@ -82,39 +79,33 @@ header.compose-header {
     color:#cccccc;
 }
 /* Compose section background */
-.compose, .bg-r-light-gray
-{
+.compose, .bg-r-light-gray {
     background-color: #404040;
     color: #502020;
 }
-.compose-remember-state, .character-count-compose:disabled, .txt-r-text-link
-{
+.compose-remember-state, .character-count-compose:disabled, .txt-r-text-link {
     color: white;
 }
-.is-selected.compose-account, .compose-account-selected
-{
+.is-selected.compose-account, .compose-account-selected {
     box-shadow: none;
 }
-.drawer-header
-{
+.drawer-header {
     border-bottom: none;
     z-index: 2;
     background: #404040;
 }
-.drawer-header:after
-{
+.drawer-header:after {
     height: 0px;
 }
-.txt-r-dark-gray
-{
+.txt-r-dark-gray {
     color: #55acee;
 }
-.drawer-content
-{
+.drawer-content {
     top: 0px;
     z-index: 1;
     padding-top: 55px;
 }
+/* Slidey side draw */
 .drawer .tweet-text { color:white }
 /* Code for more tweets */
 .more-tweets-btn {
@@ -124,19 +115,26 @@ header.compose-header {
     background-color: #502020;
 }
 /* End of more tweets */
-.compose-text-container
-{
+.compose-text-container {
     border: 1px solid #ddd;
     border-radius: 6px;
 }
-.app-search-fake
-{
-    color: #55acee;
+/* Search icon */
+.app-search-fake, .icon-search {
+    color: #cccccc;
     background-color: transparent;
     box-shadow: none;
 }
-.app-search-input
-{
+/* Search icon when clicked/hovered */
+.app-search-fake:active, .app-search-fake:hover { color:white }
+.list-item.is-selected, .list-item.is-selected > div > .icon-search { color:white; }
+.popover {background-color: #603030;}
+.search-input { background-color: #502020; }
+.list-item.is-selected { background-color: #502020; }
+.list-item-button { background-color: #502020 }
+/* Tweet separator modal line gone. */
+.is-inverted-dark .card-holder { border-top-color:transparent; }
+.app-search-input {
     border-radius: 6px;
     background-color: white;
     box-shadow: none;
@@ -279,10 +277,6 @@ input, textarea, select, .uneditable-input
     background-color: transparent;
     border-bottom: none;
 }
-.column-nav-link:hover, .app-nav-link:hover
-{
-    color: #55acee;
-}
 .is-inverted-light .tweet-action, .is-inverted-light .tweet-detail-action
 {
     color: #55acee;
@@ -314,11 +308,6 @@ input, textarea, select, .uneditable-input
 .icon-user-switch:hover
 {
     color: #55acee;
-}
-.list-item:hover, .list-item:active, .list-item.is-selected, .list-item:hover .list-icon, .list-item:active .list-icon, .list-item.is-selected .list-icon
-{
-    color: #55acee;
-    background-color: transparent;
 }
 .is-selected-tweet
 {
