@@ -11,6 +11,9 @@
 .application, .app-content, .app-columns-container {
     background-color: #603030;
 }
+a {
+    color: #a05050;
+}
 /* Scrollbar non-round */
 .scroll-styled-v::-webkit-scrollbar-thumb, .scroll-styled-h::-webkit-scrollbar-thumb {
     border-radius: 1px;
