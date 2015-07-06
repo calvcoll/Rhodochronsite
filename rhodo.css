@@ -484,3 +484,9 @@ input, textarea, select, .uneditable-input
 .column-content {
     padding-top: 0;
 }
+
+/* Add in favourite dogear line */
+is-favorite .tweet-dogear {
+    border-right: 3px solid #ff9b00;
+    box-shadow: 0px 0px 0px #ff9b00;
+}
