@@ -18,6 +18,10 @@ a {
 .scroll-styled-v::-webkit-scrollbar-thumb, .scroll-styled-h::-webkit-scrollbar-thumb {
     border-radius: 1px;
 }
+/* Remove 'trends' column */
+section.trends-column {
+    display:none;
+}
 /* Column detailing */
 .column {
     background: #404040;
