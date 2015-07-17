@@ -407,11 +407,11 @@ input, textarea, select, .uneditable-input
 }
 
 #open-modal .js-mediatable .mdl .med-tweet {
-    background: rgba(60,60,60,0.6);
+    background: rgba(96,48,48,0.6);
 }
 
 #open-modal .med-fullpanel .mdl-dismiss .icon {
-    background: rgba(60,60,60,0.6)
+    background: rgba(96,48,48,0.6);
 }
 
 #open-modal .js-mediatable .med-tray {
@@ -425,8 +425,7 @@ input, textarea, select, .uneditable-input
 
 /* Background is translucent and buttons aren't in way */
 #open-modal .js-mediatable .med-tray > a {
-    background: rgba(60,60,60,0.6);
-    bottom: -1.1rem;
+    background: rgba(96,48,48,0.6);
 }
 
 .mdl.s-full { /* Potentially not needed. */
