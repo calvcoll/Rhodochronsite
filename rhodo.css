@@ -1,4 +1,4 @@
-/*
+-/*
 #603030 background red
 #353535 column grey header
 #404040 column grey
@@ -464,6 +464,11 @@ input, textarea, select, .uneditable-input
 /* Clear loading gif */
 .med-embeditem {
     background: transparent url("https://i.imgur.com/hvLaZyv.gif") no-repeat 50% 50%
+}
+
+/* No loading gif when done */
+.med-embeditem .is-loaded {
+	background: none;
 }
 
 /* More random white line fixing */
