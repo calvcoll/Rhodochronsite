@@ -344,7 +344,7 @@ input, textarea, select, .uneditable-input
 .js-detail-content {
     background-color: #404040
 }
-#open-modal .mdl-inner .txt-large {
+#open-modal .mdl-inner .txt-large, #open-modal .mdl-inner .tweet-translation-text {
     color: white
 }
 #open-modal .scroll-conversation {
