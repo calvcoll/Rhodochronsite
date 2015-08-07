@@ -52,6 +52,10 @@ header.compose-header {
 .detail-view-inline {
     border-top: none;
 }*/
+/* Set media caret (little annoying arrow) to not be displayed */
+.media-caret {
+	display: none;
+}
 /* Set app header color */
 .app-header {background-color: #502020;}
 .btn {
