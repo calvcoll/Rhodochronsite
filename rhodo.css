@@ -510,5 +510,13 @@ input, textarea, select, .uneditable-input
 
 /* When loaded remove the spinner */
 .js-embeditem.med-embeditem.is-loaded {
-	background:none;
+    background:none;
+}
+
+/* Removes scrollbars when not hovering */
+.js-column-scroller {
+    overflow-y:hidden;
+}
+.js-column-scroller:hover {
+    overflow-y:auto;
 }
