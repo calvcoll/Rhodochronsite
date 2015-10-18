@@ -520,3 +520,8 @@ input, textarea, select, .uneditable-input
 .js-column-scroller:hover {
     overflow-y:auto;
 }
+
+/* Get rid of white line separator in tweets (on user modal) */
+.is-inverted-dark .detail-view-inline {
+	border-color: transparent;
+}
