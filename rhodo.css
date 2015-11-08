@@ -331,7 +331,7 @@ input, textarea, select, .uneditable-input
 .btn span, .mdl-header-title, .mdl-inner .column-head-title {color:white}
 .compose-reply-tweet .fullname {color:#55acee}
 .compose-reply-tweet .icon-close:before {color:white}
-.is-favorite .tweet-text a {color:#be1931} .is-retweet.is-favorite .tweet-text a {color:#55acee}
+.is-favorite .tweet-text a {color:#cf2a42} .is-retweet.is-favorite .tweet-text a {color:#55acee}
 .is-retweet .tweet-text a {color:#71b332}
 .is-favorite .account-inline .fullname {color:#be1931}
 .is-retweet.is-favorite .account-inline .fullname{color:#55acee} .is-retweet .account-inline .fullname {color:#71b332}
