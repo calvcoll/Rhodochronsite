@@ -1,4 +1,4 @@
-/*
+-/*
 #603030 background red
 #353535 column grey header
 #404040 column grey
@@ -18,6 +18,10 @@ a {
 /* Scrollbar non-round */
 .scroll-styled-v::-webkit-scrollbar-thumb, .scroll-styled-h::-webkit-scrollbar-thumb {
     border-radius: 1px;
+}
+/* Remove 'trends' column */
+section.trends-column {
+    display:none;
 }
 /* Column detailing */
 .column {
@@ -49,6 +53,10 @@ header.compose-header {
 .detail-view-inline {
     border-top: none;
 }*/
+/* Set media caret (little annoying arrow) to not be displayed */
+.media-caret {
+	display: none;
+}
 /* Set app header color */
 .app-header {background-color: #502020;}
 .btn {
@@ -341,7 +349,7 @@ input, textarea, select, .uneditable-input
 .js-detail-content {
     background-color: #404040
 }
-#open-modal .mdl-inner .txt-large {
+#open-modal .mdl-inner .txt-large, #open-modal .mdl-inner .tweet-translation-text {
     color: white
 }
 #open-modal .scroll-conversation {
@@ -404,31 +412,18 @@ input, textarea, select, .uneditable-input
 }
 
 #open-modal .js-mediatable .mdl .med-tweet {
-    background: rgba(60,60,60,0.6);
+    background: rgba(96,48,48,0.6);
 }
 
 #open-modal .med-fullpanel .mdl-dismiss .icon {
-    background: rgba(60,60,60,0.6)
-}
-
-#open-modal .js-mediatable .med-tray {
-    padding-bottom: 0px;
-}
-
-#open-modal .js-mediatable .med-tray > .js-media-preview-container.margin-vm {
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
+    background: rgba(96,48,48,0.6);
 }
 
 /* Background is translucent and buttons aren't in way */
 #open-modal .js-mediatable .med-tray > a {
-    background: rgba(60,60,60,0.6);
-    bottom: -1.1rem;
+    background: rgba(96,48,48,0.6);
 }
 
-.mdl.s-full { /* Potentially not needed. */
-    width: 60%;
-}
 
 /* Fixed spinner gif */
 .spinner-button-icon-spinner {
@@ -462,6 +457,11 @@ input, textarea, select, .uneditable-input
 /* Clear loading gif */
 .med-embeditem {
     background: transparent url("https://i.imgur.com/hvLaZyv.gif") no-repeat 50% 50%
+}
+
+/* No loading gif when done */
+.med-embeditem .is-loaded {
+	background: none;
 }
 
 /* More random white line fixing */
@@ -507,4 +507,22 @@ input, textarea, select, .uneditable-input
 .is-retweet .tweet-dogear {
     border-right: 3px solid #71b332;
     box-shadow: 0px 0px 0px #71b332;
+}
+
+/* When loaded remove the spinner */
+.js-embeditem.med-embeditem.is-loaded {
+    background:none;
+}
+
+/* Removes scrollbars when not hovering */
+.js-column-scroller {
+    overflow-y:hidden;
+}
+.js-column-scroller:hover {
+    overflow-y:auto;
+}
+
+/* Get rid of white line separator in tweets (on user modal) */
+.is-inverted-dark .detail-view-inline {
+	border-color: transparent;
 }
