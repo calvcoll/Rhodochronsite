@@ -530,3 +530,9 @@ input, textarea, select, .uneditable-input
 .is-inverted-dark .detail-view-inline {
 	border-color: transparent;
 }
+
+/* Sets linked content text (i think) to default colour */
+.is-inverted-dark .txt-normal {
+	color: #ccc;
+}
+}
