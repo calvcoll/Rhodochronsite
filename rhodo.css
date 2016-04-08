@@ -8,6 +8,10 @@
 #be1931 twitter-heart-red
 */
 
+html {
+    font-family: initial;
+}
+
 /* App background */
 .application, .app-content, .app-columns-container {
     background-color: #603030;
