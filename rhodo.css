@@ -19,6 +19,10 @@ html {
 a {
     color: #a05050;
 }
+/* Tweet actions right */
+footer.tweet-footer > .tweet-actions > .tweet-action-item {
+    float: right;
+}
 /* Scrollbar non-round */
 .scroll-styled-v::-webkit-scrollbar-thumb, .scroll-styled-h::-webkit-scrollbar-thumb {
     border-radius: 1px;
