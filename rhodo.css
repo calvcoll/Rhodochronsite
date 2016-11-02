@@ -540,3 +540,15 @@ input, textarea, select, .uneditable-input
 	color: #ccc;
 }
 }
+
+/*Sets search to be proper again */
+.app-search-tweet-results .chirp-container {
+	margin-top: 0px;
+}
+
+.app-search-tweet-results .column-header-temp {
+	height: auto;
+}
+
+
+
