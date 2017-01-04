@@ -331,9 +331,9 @@ input, textarea, select, .uneditable-input
 }
 #open-modal .tweet-body { color: white }
 #open-modal .fullname { color: white }
-.sprite {
+/*.sprite {
     background-image: url('https://i.imgur.com/fuHRSHI.png');
-}
+}*/
 .lst-group .selected .fullname { color:white } .lst-group .selected .username { color:white }
 .column-nav-flyout .column-nav-item {background-color:#502020} .column-nav-flyout .column-nav-item span {color:white}
 .btn span, .mdl-header-title, .mdl-inner .column-head-title {color:white}
