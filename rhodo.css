@@ -331,14 +331,13 @@ input, textarea, select, .uneditable-input
 }
 #open-modal .tweet-body { color: white }
 #open-modal .fullname { color: white }
-/*.sprite {
-    background-image: url('https://i.imgur.com/fuHRSHI.png');
-}*/
-/*
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
 .sprite {
     background-image: url('https://i.imgur.com/fuHRSHI.png');
-}}*/
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+.sprite {
+    background-image: url('http://i.imgur.com/JXiXkIF.png');
+}}
 .lst-group .selected .fullname { color:white } .lst-group .selected .username { color:white }
 .lst-group .selected .fullname { color:white } .lst-group .selected .username { color:white }
 .column-nav-flyout .column-nav-item {background-color:#502020} .column-nav-flyout .column-nav-item span {color:white}
