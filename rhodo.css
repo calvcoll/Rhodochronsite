@@ -556,11 +556,15 @@ input, textarea, select, .uneditable-input
 }
 
 /* Fix modal colours */
-.model-content {
-	border-radius: initial;
+.modal-content {
+	border-radius: 0px;
+}
+
+.bg-r-white {
+	background-color:#eaeaea;
 }
 
 /* Fix modal borders */
 .mdl-header-divider, .lst li {
-	border-bottom: 1px solid #666666;
+	border-bottom: 1px solid #cccccc;
 }
